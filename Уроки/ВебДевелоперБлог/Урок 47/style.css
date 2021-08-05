@@ -5,13 +5,16 @@ fieldset{
 legend, table{
     font-size: 20px;
     font-weight: bold;
+    /* новый коммет */
 }
 
 tr{}
 
 td{}
 
-label{}
+label{
+    // коммент
+}
 
 button{
     height: 50px;
