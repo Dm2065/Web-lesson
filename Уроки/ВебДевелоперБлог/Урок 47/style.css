@@ -1,7 +1,5 @@
 fieldset{
     width: 800px;
-
-
 }
 
 legend, table{
@@ -26,27 +24,10 @@ button{
     padding: 10px 15px;
 }
 
-<form action="">
-<fieldset>
-    <legend align ="right">Форма регистрации</legend>
-    <table>
-        <tr>
-            <td><label for="name">Введите имя</label></td>
-            <td><input id="name" type="text" placeholder="Имя"></td>
-        </tr>
-        <tr>
-            <td><label for="mail">Введите email</label></td>
-            <td><input id= "email"type="text" placeholder="Почта"></td>
-        </tr>
-        <tr>
-            <td><label for="phone">Введите телефон</label></td>
-            <td><input id="phone" type="text" placeholder="Телефон"></td>
-        </tr>
-        <tr>
-            <td><label for="message" >Введите сообщение</label></td>
-            <td><textarea name="" id="masage" cols="50" rows="10" placeholder="Сообщение"></textarea></td>
-        </tr>
-    </table>
-</fieldset>
-
-</form>
+kbd{
+    background-color: black;        /*цвет фона*/
+    color: white;                   /*цвет текста*/
+    padding: 5px;                     /*внутренний отступ*/
+    margin: 4px;                       /*внешний отступ*/
+    border: rgb(180, 31, 5) 2px double; /*граница (цвет, тип линии-сплошная, пунктир и тд) ширина) */
+}
