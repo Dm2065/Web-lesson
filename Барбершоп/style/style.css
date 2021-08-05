@@ -1,0 +1,40 @@
+a{
+	color: red;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#inform{
+	color: green;
+}
+
+.item-news{
+	color: red;
+	font-size: 30px;
+	border: 1px solid #000000;
+	background: #BDD7EE;
+} /* пример использования класса, рамки и фона*/
+
+.succes{
+	background: #00C181;
+	color: #FFFFFF;
+}
+
+.bloknews{
+	border: 8px solid #BDD7EE; /*установка границы*/
+	background: yellow;
+	margin: 10px;
+}
+.attention{
+	font-size: 25px;
+
+
+}
+.focus:hover{
+	background: #786b59; /* Цвет фона под ссылкой */ 
+    color: #ffe; /* Цвет ссылки */ 
+    font-size: 30px;
+    border: 12px; /*граница*/
+
+    transform: translate(22px, 0%); /*сдвигает по горизонтали и вертикали*/
+}

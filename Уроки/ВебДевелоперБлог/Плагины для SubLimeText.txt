@@ -1,0 +1,15 @@
+1. Package Control - уже есть - https://youtu.be/HZ4BUcogWCQ?t=81
+
+2. Emmet - установил - https://youtu.be/HZ4BUcogWCQ?t=145
+
+3. BracketHightliter - показывает где заканчивается тег - https://youtu.be/HZ4BUcogWCQ?t=343
+
+4. AutoPrefixer - пока не понял для чего он нужен
+
+5. AutoFileName - пути к файлам - https://youtu.be/HZ4BUcogWCQ?t=457 - не очевидная необходимость
+
+6. Git -  - https://youtu.be/HZ4BUcogWCQ?t=808 
+
+7. CssComb - устанавливает свойства CSS в порядке согласно правил.
+
+8. 

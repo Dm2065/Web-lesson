@@ -1,0 +1,135 @@
+/*
+Design by Free Responsive Templates
+http://www.free-responsive-templates.com
+Released for free under a Creative Commons Attribution 3.0 Unported License (CC BY 3.0)
+*/ 
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color: #7d7d7d;
+	background: url(../images/siteBackground.jpg);	
+}
+a img { 
+	border: none;
+}
+a:link {
+	color:#F05A1A;
+	text-decoration:none; 
+}
+a:visited {
+	color:#F05A1A;
+	text-decoration:none;
+}
+a:hover, a:active, a:focus { 
+	color:#F05A1A;
+	text-decoration:underline;
+}
+h1 {
+	font-size:30px;
+	color:#F05A1A;
+	padding:10px 20px;
+	text-shadow: 0px 0px, 1px 2px #ffe3d7;
+	font-weight:inherit;
+	text-align:center;
+	font-style:italic;
+}
+h2 {
+	text-shadow: 0px 0px, 1px 2px #fafafa;
+	text-align:center;
+	font-size:18px;
+	font-weight:normal;
+	padding:10px 20px;
+	color:#2d2c2a;
+}
+h3 {
+	text-shadow: 0px 0px, 1px 2px #fafafa;
+	font-size:14px;
+	font-weight: bold;
+	padding:10px 20px;
+	color:#F05A1A;
+}
+h4 {
+	text-shadow: 0px 0px, 1px 2px #fafafa;
+	text-align:center;
+	font-size:14px;
+	font-weight:normal;
+	padding:10px 20px;
+	color:#8c8c8c;
+}
+p, .freeStockPhotos {
+	line-height:140%;
+	padding:0px 20px 20px 20px;
+}
+p span {
+	font-style:italic;
+}
+.smallText {
+	font-size:12px;
+}
+hr {
+	height:1px;
+	background:#e1e1e1;
+	border:0;
+	margin:20px 0;
+}
+h3 span {
+	float:right;
+}
+h3 span a {
+	color:#2D2C2A !important;
+	text-decoration:underline !important;
+	font-weight:normal;
+}
+.author {
+	background:#f8f8f8;
+	text-shadow:0 0px, 1px 1px #ffffff;
+	color:#565656;
+	border-top:1px solid #e1e1e1;
+	border-bottom:1px solid #e1e1e1;
+}
+section ul, section ol {
+	padding:0 40px;
+}
+footer {
+	text-align:center;
+	padding:20px 0;
+}
+footer ul {
+	padding:10px 20px;
+}
+footer li {
+	list-style:none;
+	padding:0 10px;
+	display:inline;
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+.wrapper {
+	width:960px;
+	margin:0 auto;
+}
+/**************************/
+/*********************************Begin Media Queries****************************************/
+/**************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	.wrapper {
+		width:95%;
+	}
+}
+/**************************/
+/*********************************End Media Queries****************************************/
+/**************************/
