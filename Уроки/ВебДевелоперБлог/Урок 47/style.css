@@ -1,19 +1,20 @@
-fieldset{
+fieldset {
     width: 800px;
 }
 
-legend, table{
+legend,
+table {
     font-size: 20px;
     font-weight: bold;
 }
 
-tr{}
+tr {}
 
-td{}
+td {}
 
-label{}
+label {}
 
-button{
+button {
     height: 50px;
     font-size: 20px;
     margin: 8px;
@@ -24,14 +25,19 @@ button{
     padding: 10px 15px;
 }
 
-kbd{
-    background-color: black;        /*цвет фона*/
-    color: white;                   /*цвет текста*/
-    padding: 5px;                     /*внутренний отступ*/
-    margin: 4px;                       /*внешний отступ*/
-    border: rgb(180, 31, 5) 2px double; /*граница (цвет, тип линии-сплошная, пунктир и тд) ширина) */
+kbd {
+    background-color: black;
+    /*цвет фона*/
+    color: white;
+    /*цвет текста*/
+    padding: 5px;
+    /*внутренний отступ*/
+    margin: 4px;
+    /*внешний отступ*/
+    border: rgb(180, 31, 5) 2px double;
+    /*граница (цвет, тип линии-сплошная, пунктир и тд) ширина) */
 }
 
-button:hover{
+button:hover {
     background-color: rgb(190, 224, 189);
 }
