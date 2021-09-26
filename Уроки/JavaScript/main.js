@@ -29,39 +29,44 @@ let headingElement = document.getElementById("main-heading");
             $("h1").append("<p>Это новый элемент, но не новый</p>");
            */
         // }
-newText = prompt("Введите новый заголовок"); 
-i=1;     
-console.log(newText); 
-// while (!(newText === null) || i<4)
-// // for(i = 1; i<=3; i++)
-//  {
-//     //console.log(newText);
-//     let newText = prompt("Введите новый заголовок");
-//     console.log(newText);
-//     result = !(newText === null);
-//     console.log(result);
-//     $("body").append("<p>" + newText + "</p>");
-//     i++;
-//  }
-//  do {
-//     let newText = prompt("Введите новый заголовок");
-//     console.log(newText);
-//     result = !(newText === null);
-//     console.log(result);
-//     $("body").append("<p>" + newText + "</p>");
-//  } while (!(newText === null) )
+// newText = prompt("Введите новый заголовок"); 
+// i=1;     
+// console.log(newText); 
+/* нс неудачная попытка добавления элемента на страницу
+   разобраться так null не получилось
+
+while (!(newText === null) || i<4)
+// for(i = 1; i<=3; i++)
+ {
+    //console.log(newText);
+    let newText = prompt("Введите новый заголовок");
+    console.log(newText);
+    result = !(newText === null);
+    console.log(result);
+    $("body").append("<p>" + newText + "</p>");
+    i++;
+ }
+ */
+ /* работает
+ do {
+    let newText = prompt("Введите новый заголовок");
+    console.log(newText);
+    result = !(newText === null);
+    console.log(result);
+    $("body").append("<p>" + newText + "</p>");
+ } while (!(newText === null) )
+ */
 result = true;
  while (result)
-// for(i = 1; i<=3; i++)
  {
     let newText = prompt("Введите новый заголовок");
     console.log(newText);
     result = !(newText === null);
     console.log(result);
     if (result) {
-        $("body").append("<p>" + newText + "</p>"); 
+        $("body").append("<p>" + newText + "</p>")
+        $("p").fadeOut(3000).fadeIn(2000); 
     }   
-    i++;
  }
 
  
