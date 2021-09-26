@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Галерея для сайта на JavaScript</title>
+	<style>
+		body {
+			background: url('img/back.png');
+		}	
+		.myButton {
+			box-shadow:inset 0px 1px 0px 0px #54a3f7;
+			background-color:#007dc1;
+			border-radius:3px;
+			border:1px solid #124d77;
+			display:inline-block;
+			cursor:pointer;
+			color:#ffffff;
+			padding:6px 24px;
+			text-decoration:none;
+			text-shadow:0px 1px 0px #154682;
+		}
+		.myButton:hover {
+			background-color:#0061a7;
+		}
+		.myButton:active {
+			position:relative;
+			top:1px;
+		}
+		.wrapper{
+			width: 1280px;
+			height: 720px;
+			margin: 10px auto;
+		}
+		.left_right{
+			position: absolute;
+			display: none;
+			cursor: pointer;
+			margin: -388px 0 0 10px;
+		}
+		img#images {
+			border: double black 6px;
+		}
+		#left, #right {
+			width: 70px;
+			height: 70px;
+			background: rgba(0,0,0, 0.7);
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div onMouseOver="btn_show()" onMouseOut="btn_noshow()" class="wrapper">
+			<script type="text/javascript">  
+				//Массив, в котором содержатся ссылки на изображения
+				var imageArray = [
+					"img/1.jpg",		
+					"img/2.jpg",		
+					"img/3.jpg",		
+					"img/4.jpg",		
+					"img/5.jpg"					
+				];
+				window.number = '0';
+				//Привязываем количество картинок к размеру массива
+				var imageCount = imageArray.length;		
+				function image(num){				
+					//Если выбрана следующая картинка
+					if(num == 1){
+						//Если это последняя картинка, то не увеличиваем счетчик number
+						if(number < imageCount - 1){						
+							number++;
+							document.getElementById('images').src = imageArray[number];
+							document.getElementById('num_img').innerHTML= number + 1 + '/' + imageCount;
+						}
+					}					 
+					else{  //Если выбрана предыдущая картинка					
+						//Если это первая картинка, то не уменьшаем счетчик number
+						if(number > 0){						
+							number--;
+							document.getElementById('images').src = imageArray[number];
+							document.getElementById('num_img').innerHTML= number + 1 + '/' + imageCount;
+						}
+					}
+				}				
+				//Функция для показа стрелочек
+				function btn_show(){
+					if(number != 0) document.getElementById('left').style.display='block';
+					if(number != imageCount - 1) document.getElementById('right').style.display='block';
+				}				
+				//Функция, которая прекращает показ стрелочек
+				function btn_noshow(){
+					document.getElementById('left').style.display='none';
+					document.getElementById('right').style.display='none';
+				}
+				//Выводим картинки
+				document.write('<img id="images" src="' + imageArray[0] + '">');
+			</script>
+		<!-- Стрелочка влево -->
+		<div id="left" onclick="image(0)" class="left_right"><img src="img/left.png"></div>
+		<!-- Стрелочка вправо -->
+		<div id="right" onclick="image(1)" class="left_right" style="margin-left: 1200px; position: absolute; display: none;"><img src="img/right.png"></div>
+	</div>
+	<center><p style="font-size: 18px;color: #333;font-weight: bold;" id="num_img"></p></center>
+	<center><span class="myButton" onclick="image(0)">&lt;</span> <span class="myButton" onclick="image(1)">&gt;</span></center>
+</body>
+</html>
